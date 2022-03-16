@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+//Internal CSS 
+const internalCSS = {
+  backgroundColor: 'khaki',
+  border : '3px solid red',
+  borderRadius : '10px',
+  margin : '15px auto',
+  width : "500px",
+}
+
 function App() {
   return (
     <div className="App">
@@ -28,7 +37,7 @@ function Rana(){
 }
 // Dynamic Component Create 
 function DynamicName(props){
-  return(<h2>i'm {props.name} come from dynamic data.</h2>)
+  return(<h2 style={internalCSS}>i'm {props.name} come from dynamic data.</h2>)
 }
 
 export default App;
