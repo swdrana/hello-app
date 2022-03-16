@@ -5,7 +5,11 @@ function App() {
   return (
     <div className="App">
       {/* Basic Componet */}
-      <Rana></Rana>
+      <Rana ></Rana>
+
+      {/* className can't be create custom Component
+      <Rana className='color'></Rana> */}
+
       {/* Dynamic Componet Create  */}
       <DynamicName name="Rana"></DynamicName>
       <DynamicName name="Masud"></DynamicName>
@@ -18,7 +22,7 @@ function App() {
 function Rana(){
   return (
     <div>
-      <h1>my name is rana</h1>
+      <h1 className="color">my name is rana</h1>
     </div>
   )
 }
