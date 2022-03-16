@@ -4,18 +4,27 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <p>World</p>
+      {/* Basic Componet */}
       <Rana></Rana>
+      {/* Dynamic Componet Create  */}
+      <DynamicName name="Rana"></DynamicName>
+      <DynamicName name="Masud"></DynamicName>
+      <DynamicName name="MD"></DynamicName>
+
     </div>
   );
 }
+// Basic Component
 function Rana(){
   return (
     <div>
       <h1>my name is rana</h1>
     </div>
   )
+}
+// Dynamic Component Create 
+function DynamicName(props){
+  return(<h2>i'm {props.name} come from dynamic data.</h2>)
 }
 
 export default App;
